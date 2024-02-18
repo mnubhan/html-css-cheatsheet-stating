@@ -1,0 +1,42 @@
+:root {
+    --black: black;
+    --white: #fff;
+    --code-backgound-color: #5f745f;
+    --code-text-color:#8cb4ff;
+    --highlight-code: #343;
+    --css-selector-color: #bea5ff;
+    --css-properties-color: #ff97a0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  table,
+  td,
+  th {
+    border: 1px solid var(--black);
+  }
+  div {
+    padding: 10px;
+    color: var(--white);
+  }
+  
+  .syntax {
+    background-color: var(--code-backgound-color);
+    min-height: 10em;
+    max-width: 30em;
+  }
+  
+  .css-selector {
+    color: var(--css-selector-color);
+  }
+  
+  .css-property {
+    color: var(--css-properties-color);
+  }
+  
+  .code-inline{
+    background-color:var(--code-backgound-color);
+    color:var(--code-text-color);
+  }
