@@ -4,66 +4,119 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pseudo Classes</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
       <h1>Pseudo Selector</h1>
       <h2>Explaination</h2>
       <p>
-        Is a selector that is used to select specified part of the element based or in specific state.
+        Is a selector that is used to select specified part of the element based
+        or in specific state.
       </p>
       <h2>Type</h2>
       <section class="pseudo-classes">
         <h3>Psuedo Classes</h3>
         <h4>Explaination</h4>
-        <p>A selector that selects element that are in specific states. It keywords usually start with a colon <span>:</span> </p>
-        <h4>Syntax</h4>
         <p>
-          button::hover // button is the element selector , hover is the psuedo
-          class
+          A selector that selects element that are in specific states. It
+          keywords usually start with a colon
+          <code class="code-inline">:</code>.
         </p>
-        <h3>Table Pseudo Classes</h3>
+        <h4>Syntax</h4>
+        <div class="syntax">
+          <p class="css-comment">
+            /*button is the element selector , hover is the psuedo class*/
+          </p>
+          <p class="css-code">
+            <span class="css-selector">button::hover</span
+            ><span class="css-block">{</span><br />
+            <span class="css-property">color</span>
+            <span class="css-colon">:</span>
+            <span class="css-value">blue</span>
+            <br />
+            <span class="css-block">}</span>
+          </p>
+        </div>
+        <h4>Table Pseudo Classes</h4>
         <table>
-            <thead>
-                <tr>
-                    <th scope="col">Selector</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Explaination</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th scope="col">Selector</th>
+              <th scope="col">Type</th>
+              <th scope="col">Explaination</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen">:fullscreen</a></td>
+              <td>Element display state</td>
+              <td>Matches an element that is currently in fullscreen mode</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:modal">:modal</a></td>
+              <td>Element display state</td>
+              <td>
+                Matches an element that is in a state which it excludes all
+                interaction with elements outside it untill the interaction has
+                been dismmissed
+              </td>
+            </tr>
+          </tbody>
         </table>
       </section>
       <section class="pseudo-element">
         <h3>Pseudo Element</h3>
         <h4>Explaination</h4>
-        <p>It select specific part of the element. It keyword usually start with double color <span>::</span></p>
+        <p>
+          It select specific part of the element. It keyword usually start with
+          double color <code class="code-inline">::</code>.
+        </p>
         <h4>Syntax</h4>
+        <div class="syntax">
+          <p class="css-code">
+            <span class="css-selector">div::after</span>
+            <span class="css-block">{</span><br />
+            <span class="css-property">font-family</span>
+            <span class="css-colon">:</span>
+            <span class="css-value">Arial, Times, sans-serif </span><br />
+            <span class="css-block">}</span>
+          </p>
+        </div>
         <h4>Table Pseudo Element</h4>
         <table>
-            <thead>
-                <th>
-                    <tr type="col">Selector</tr>
-                    <tr type="col">Explaination</tr>
-                </th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th type="col">Selector</th>
+              <th type="col">Explaination</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after"
+                  >::after</a
+                >
+              </td>
+              <td>
+                Create a pseudo-element that is the last child of the selected
+                element.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"
+                  >::before</a
+                >
+              </td>
+              <td>
+                Create a pseudo-element in that is the first child of the
+                selected element
+              </td>
+            </tr>
+          </tbody>
         </table>
       </section>
     </main>
